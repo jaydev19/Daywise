@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Manager</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="calendar-header">
+    <h1 id="current-month"></h1>
+    <div class="nav-buttons">
+      <span id="user-name" class="user-avatar">JD</span>
+      <button id="prev-month" class="nav-button">{</button>
+      <button id="next-month" class="nav-button">}</button>
+    </div>
+  </div>
+
+  <div class="day-navigation">
+
+    <div class="date-container">
+      <h2 id="current-day"></h2>
+      <span id="current-weekday"></span>
+    </div>
+    <button id="prev-day" class="nav-button"><<</button>
+    <button id="next-day" class="nav-button">>></button>
+  </div>
+
+  
+  <div id="calendar-grid" class="calendar-grid"></div>
+
+  <ol id="todo-list"></ol>
+
+  <input type="text" id="task-input" placeholder="Add a new task...">
+  <button id="add-task">Add Task</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
